@@ -1,0 +1,26 @@
+{
+    "name": "tallyst/xf-redirect",
+    "description": "Permanent 301 redirects from old XenForo/vBulletin URLs to migrated Flarum content (SEO/link preservation).",
+    "type": "flarum-extension",
+    "keywords": ["flarum", "redirect", "xenforo", "migration", "seo"],
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^2.0.0-rc.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tallyst\\XfRedirect\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "XF → Flarum Redirect",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-route",
+                "backgroundColor": "#196c2e",
+                "color": "#fff"
+            }
+        }
+    }
+}
